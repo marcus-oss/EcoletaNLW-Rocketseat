@@ -1,0 +1,16 @@
+<div id="modal">
+    <div class="content">
+    <img src="/assets/x.svg" alt="cadastrado errado">
+<h1> Erro no cadastro !</h1>
+        </div>
+    </div>
+<script>
+setTimeout(()=>{
+window.location = "/"
+}, 2000)
+
+</script>
+
+{% if not saved2 %}
+{%include "partials/not-created.html"%}
+{% endif %}
